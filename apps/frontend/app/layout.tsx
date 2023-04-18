@@ -5,7 +5,7 @@
 import Head from 'next/head'
 import React, { PropsWithChildren } from 'react'
 // import { layoutApolloClient } from '../../apollo-client'
-// import Layout from '../component/layout/Layout'
+import Layout from '../src/components/layout/Layout'
 // import WalletConnect from '../component/walletConnect/WalletConnectModal'
 // import '../libs/firebase'; // Initialize FirebaseApp
 // import RecoilProvider from '../recoil/RecoilProvider'
@@ -25,7 +25,9 @@ const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
         <title>Next.js</title>
       </Head>
       <body>
-        {children}
+        <Layout>       
+           {children}
+        </Layout>
       </body>
     </html>
   )

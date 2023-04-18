@@ -31,7 +31,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <AppShell
         padding="md"
-        // navbar={<AppNavBar />}
         header={<AppHeader />}
         styles={(theme) => ({
           main: {

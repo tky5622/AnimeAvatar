@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/ds": "^6.0.7",
     "@tabler/icons": "^2.16.0",
     "next": "latest",
     "react": "^18.2.0",
