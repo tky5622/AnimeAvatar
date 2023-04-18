@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons": "^2.16.0",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "recoil": "^0.7.7",
+    "ui": "workspace:*",
+    "wagmi": "^0.12.10"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
@@ -20,6 +23,6 @@
     "@types/react-dom": "^18.0.7",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.3"
+    "typescript": "4.9.4"
   }
 }
