@@ -13,6 +13,7 @@ import { useRecoilState, useRecoilValue } from 'recoil'
 // import WalletConnectModal from '../walletConnect/WalletConnectModal'
 import { AppHeader } from './AppHeader'
 import { FooterLinks } from './Footer'
+import { Container } from '@mantine/core';
 
 type LayoutProps = {
   children: React.ReactNode
@@ -41,7 +42,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           },
         })}
       >
-        {children}
+        <Container>
+          tetstestset
+          {children}
+        </Container>
         <FooterLinks />
       </AppShell>
     </>
