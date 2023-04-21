@@ -9,19 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mantine/ds": "^6.0.7",
+    "@mantine/core": "^6.0.8",
+    "@mantine/dropzone": "^6.0.8",
+    "@mantine/ds": "^6.0.8",
+    "@mantine/form": "^6.0.8",
+    "@mantine/hooks": "^6.0.8",
+    "@mantine/prism": "^6.0.8",
+    "@react-three/drei": "^9.65.4",
+    "@react-three/fiber": "^8.12.2",
     "@tabler/icons": "^2.16.0",
+    "core@latest": "link:mantine/core@latest",
     "next": "latest",
+    "pnpm": "^8.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "recoil": "^0.7.7",
+    "three-stdlib": "^2.21.8",
     "ui": "workspace:*",
-    "wagmi": "^0.12.10"
+    "wagmi": "^0.12.12"
   },
   "devDependencies": {
-    "@types/node": "^17.0.12",
-    "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
+    "@types/node": "^17.0.45",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "4.9.4"

@@ -42,10 +42,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           },
         })}
       >
-        <Container>
           tetstestset
           {children}
-        </Container>
         <FooterLinks />
       </AppShell>
     </>
