@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Stepper, Button, Group, TextInput, PasswordInput, Code } from '@mantine/core';
 // @ts-ignore
 import { useForm } from '@mantine/form';
+import Link from 'next/link';
 
 export function SettingForm() {
   const [active, setActive] = useState(0);
@@ -92,6 +93,11 @@ export function SettingForm() {
         )}
         {active !== 3 && <Button onClick={nextStep}>Next step</Button>}
       </Group>
+      <Link href={'/assets/id'}>
+         <Button variant="default" onClick={prevStep}>
+                Generate Avatar
+        </Button>
+      </Link>
     </>
   );
 }

@@ -73,7 +73,6 @@ export function DropZone({
       <div style={{width:100, background: 'green'}}>
         uploaded image
       </div>
-      <button>generate</button>
     </>
   )
 }
