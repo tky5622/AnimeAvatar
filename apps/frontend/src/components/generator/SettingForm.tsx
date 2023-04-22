@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Stepper, Button, Group, TextInput, PasswordInput, Code } from '@mantine/core';
+// @ts-ignore
 import { useForm } from '@mantine/form';
 
 export function SettingForm() {
