@@ -2,20 +2,20 @@
 
 import React from 'react'
 import { NextPage } from 'next/types'
-import { HeroImage } from '../../../src/components/home/HeroImage'
-import { AvatarContainer } from '../../../src/components/home/AvatarContainer'
+import { Container } from '@mantine/core'
+import { AvatarViewer } from '../../../src/components/avatar/AvatarViewer'
 // import Head from 'next/head'
 // import Image from 'next/image'
-const Home: NextPage = () => {
+const Avatar: NextPage = () => {
+  const modelUrl = 'modelUrl//'
   return (
-    <>
-    <HeroImage/>
-    <AvatarContainer/>
-    </>
+    <Container>
+      <AvatarViewer modelUrl={modelUrl}/>
+    </Container>
   )
 }
 
-export default Home
+export default Avatar
 
 
 

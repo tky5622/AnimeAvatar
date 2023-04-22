@@ -5,6 +5,7 @@ import { useState, useCallback } from "react";
 export function ImageUploadContainer () {
 
     const [files, setFiles] = useState<string[]>([])
+    // for now, uploadable image is single 
 
     const onChangeForm = useCallback((uploadedFile: string) => {
         const prevFiles = files
@@ -15,9 +16,9 @@ export function ImageUploadContainer () {
 
       
     return (
-        <Box maw={300} mx="auto">
+        <div>
             <DropZone onChangeForm={onChangeForm} uploadedFiles={files}/>
             {/* <>ideally, put upload file hrer</> */}
-        </Box>
+        </div>
     )
 }

@@ -5,24 +5,34 @@ import { Html, OrbitControls, useGLTF, useProgress } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { FC, Suspense } from 'react'
 import { GLTF as StdlibGLTF } from 'three-stdlib'
+//@ts-ignore
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { VRMLoaderPlugin } from '@pixiv/three-vrm';
 
 interface ModelProps {
   progress: number
   modelUrl: any
 }
 
+const loader = new GLTFLoader();
+
+// Install GLTFLoader plugin
+loader.register((parser: any) => {
+  return new VRMLoaderPlugin(parser);
+});
+
+
 const Model: FC<ModelProps> = ({ progress, modelUrl }) => {
   // @ts-ignore
-  const gltf: StdlibGLTF = useGLTF(modelUrl)
-
+  const gltf = useLoader(loader, modelUrl)
   return <primitive object={gltf?.scene} />
 }
 
-type GltfCanvasProps = {
+type AvatarViewerProps = {
   modelUrl: string
 }
 
-export const GltfCanvas: FC<GltfCanvasProps> = ({ modelUrl }) => {
+export const AvatarViewer: FC<AvatarViewerProps> = ({ modelUrl }) => {
   const { progress } = useProgress()
 
   return (

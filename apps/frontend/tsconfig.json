@@ -5,6 +5,8 @@
     "**/*.ts",
     "**/*.tsx",
     "src/*",
+    "src/components/**/*.tsx",
+    "src/components/**/*.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": [

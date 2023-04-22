@@ -74,12 +74,12 @@ const links = [
   //   links: [{ link: '3d models;', label: '3d models' }],
   // },
   {
-    link: '/artists',
-    label: 'artists',
+    link: '/generator',
+    label: 'generate',
   },
   {
-    link: '/projects',
-    label: 'projects',
+    link: '/signin',
+    label: 'signin',
   },
 ]
 
