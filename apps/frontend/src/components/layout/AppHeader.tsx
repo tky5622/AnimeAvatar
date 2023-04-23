@@ -92,7 +92,6 @@ type LinksType = {
 export function AppHeader() {
   const { classes } = useStyles()
   const [opened, { toggle }] = useDisclosure(false)
-//   const { isConnected, address } = useAccount()
 
   const items = links.map((link: LinksType) => {
     const menuItems = link.links?.map((item) => (
@@ -147,15 +146,9 @@ export function AppHeader() {
             <MantineLogo size={28} />
           </Link>
         </Group>
-        <Group spacing={5} className={classes.links}>
-          \{items}
+        <Group spacing={4} className={classes.links}>
+          {items}
         </Group>
-
-        {/* {isConnected ? (
-          <UserMenu address={address} />
-        ) : (
-          <WalletConnectContainer />
-        )} */}
       </Container>
     </Header>
   )
