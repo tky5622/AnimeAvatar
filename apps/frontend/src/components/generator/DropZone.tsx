@@ -61,18 +61,6 @@ export function DropZone({
           </div>
         </Group>
       </Dropzone>
-      <div style={{width:100, background: 'green'}}>
-        uploaded image
-      </div>
-      <div style={{width:100, background: 'green'}}>
-        uploaded image
-      </div>
-      <div style={{width:100, background: 'green'}}>
-        uploaded image
-      </div>
-      <div style={{width:100, background: 'green'}}>
-        uploaded image
-      </div>
     </>
   )
 }
