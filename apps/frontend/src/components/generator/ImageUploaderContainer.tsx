@@ -39,7 +39,7 @@ export function ImageUploadContainer ({images, setImages}: ImageUploadContainerP
                 return (
                 <SimpleGrid>
                   <div>
-                      <Image width={60} height ={60 }src={image}/>
+                      <Image width={460} height ={460 }src={image}/>
                       <button onClick={() => deleteImage(i)}>delete</button>
                   </div>
                 </SimpleGrid>)}

@@ -45,9 +45,6 @@ export function DropZone({
           </Dropzone.Idle>
 
           <div>
-            {uploadedFiles ? (
-              <>file is added</>
-            ) : (
               <>
                 <Text size="xl" inline>
                   Drag images here or click to select files
@@ -57,7 +54,6 @@ export function DropZone({
                   5mb
                 </Text>
               </>
-            )}
           </div>
         </Group>
       </Dropzone>
