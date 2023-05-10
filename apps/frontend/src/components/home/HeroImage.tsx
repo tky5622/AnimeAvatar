@@ -101,16 +101,14 @@ export function HeroImage() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Automated AI code reviews for{' '}
+          generate 3d assets from Images{' '}
           <Text component="span" inherit className={classes.highlight}>
-            any stack
+            By Generative AI
           </Text>
         </Title>
 
         <Container size={640}>
           <Text size="lg" className={classes.description}>
-            Build more reliable software with AI companion. AI is also trained to detect lazy
-            developers who do nothing and just complain on Twitter.
           </Text>
         </Container>
 

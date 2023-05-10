@@ -18,6 +18,7 @@
     "@pixiv/three-vrm": "^1.0.9",
     "@react-three/drei": "^9.65.4",
     "@react-three/fiber": "^8.12.2",
+    "@supabase/supabase-js": "^2.21.0",
     "@tabler/icons": "^2.16.0",
     "core@latest": "link:mantine/core@latest",
     "next": "latest",
